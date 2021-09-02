@@ -1,0 +1,7 @@
+.picstyle {
+  display: block;
+  margin: 15px;
+  width: 1200px;
+  border: 2mm rgba(24, 248, 43, 0.6);
+  border-radius: 5px 25% 10%;
+}
