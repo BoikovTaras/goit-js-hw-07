@@ -1,9 +1,6 @@
 const inputArea = document.querySelector("#validation-input");
 const inputLength = inputArea.dataset.length;
-inputArea.addEventListener('blur', invalidArea);
-
-
-function invalidArea() {
+inputArea.addEventListener('blur', invalidArea => {
     let value = inputArea.value;
     if (Number(inputLength) === value.length) {
         inputArea.classList.remove('invalid');
@@ -12,4 +9,4 @@ function invalidArea() {
         inputArea.classList.remove('valid');
         inputArea.classList.add('invalid');
     }
-};
+});
